@@ -1,6 +1,6 @@
 {
-  "appId": "co.tz.bleca.nourishai",
-  "appName": "Nourish AI",
+  "appId": "co.tz.bleca.mealtracker",
+  "appName": "Meal Tracker",
   "webDir": "www",
   "server": {
     "url": "https://nourish-ai-hezikg.v2.appdeploy.ai/",
