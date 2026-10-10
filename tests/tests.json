@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Log a meal and retain it",
+    "sanity": true,
+    "viewport": "desktop",
+    "covers": [
+      "food diary create/read",
+      "tracker database write/read",
+      "daily nutrition totals"
+    ],
+    "description": "A meal can be logged and appears in the food diary with its calories.",
+    "steps": [
+      "Open Food diary",
+      "Enter food name Rice and beans, calories 450, protein 15, carbs 70 and fat 8",
+      "Save the meal",
+      "Refresh the page"
+    ],
+    "expected": "Rice and beans appears in Food history after refresh and contributes 450 kcal to today's overview."
+  },
+  {
+    "name": "Manage pantry ingredients",
+    "viewport": "desktop",
+    "covers": [
+      "pantry create/read/delete",
+      "pantry search",
+      "pantry ingredient validation"
+    ],
+    "description": "Pantry ingredients can be added, searched and removed.",
+    "steps": [
+      "Open My pantry",
+      "Add Beans with quantity 500 g and category Grains & pasta",
+      "Search for Beans",
+      "Delete the Beans entry"
+    ],
+    "expected": "Beans is searchable after saving and is absent after deletion."
+  },
+  {
+    "name": "Record weight history",
+    "viewport": "mobile",
+    "covers": [
+      "weight log create/read/delete",
+      "mobile weight form",
+      "weight input validation"
+    ],
+    "description": "A valid weight entry is saved and displayed in history on a mobile viewport.",
+    "steps": [
+      "Open Weight log",
+      "Enter weight 60.5 kg and today's date",
+      "Save entry",
+      "Refresh the page"
+    ],
+    "expected": "The 60.5 kg entry appears in Weight history after refresh."
+  },
+  {
+    "name": "Generate pantry-based meal ideas",
+    "viewport": "desktop",
+    "covers": [
+      "AI meal generation",
+      "pantry context passed to AI",
+      "AI error handling"
+    ],
+    "description": "The AI meal ideas workflow returns useful meal suggestions from pantry ingredients.",
+    "steps": [
+      "Add Beans and Rice in My pantry",
+      "Open AI meal ideas",
+      "Enter budget-friendly dinner in the request field",
+      "Select Generate meal ideas"
+    ],
+    "expected": "A result area displays meal suggestions based on the available ingredients or a clear retry message if AI is unavailable."
+  },
+  {
+    "name": "Display owner profile while keeping tracker navigation",
+    "viewport": "desktop",
+    "covers": [
+      "owner name and email profile display",
+      "existing tracker navigation remains available"
+    ],
+    "description": "Verifies the owner's display name and email are visible without removing meal tracker features.",
+    "steps": [
+      "Open Nourish AI",
+      "Check the profile card in the sidebar",
+      "Open Food diary"
+    ],
+    "expected": "Faida Sylivester and profitsylivester@gmail.com appear in the profile, and Food diary remains accessible."
+  }
+]
