@@ -1,0 +1,12 @@
+{
+  "appId": "co.tz.bleca.nourishai",
+  "appName": "Nourish AI",
+  "webDir": "www",
+  "server": {
+    "url": "https://nourish-ai-hezikg.v2.appdeploy.ai/",
+    "cleartext": false,
+    "allowNavigation": [
+      "nourish-ai-hezikg.v2.appdeploy.ai"
+    ]
+  }
+}
